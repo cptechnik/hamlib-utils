@@ -32,11 +32,11 @@ rigctl -m2 U COMP 1\L AF 0.1
 
 
 ###   Tuner
-##   off
+#   off
 rigctl -m2 U TUNER 0
-##   on
+#   on
 rigctl -m2 U TUNER 1
-##   tuning
+#   tuning
 rigctl -m2 G TUNE
 
 
@@ -64,4 +64,9 @@ rigctl -m2 Y 2
 # switching to memory channel 80
 rigctl  -m2 E 80
 
-
+# switching VFO A , VFO B , MEM
+rigctl -m2 V VFOA
+rigctl -m2 V VFOB
+rigctl -m2 V MEM
+# get status
+rigctl -m2 v
