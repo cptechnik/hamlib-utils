@@ -58,8 +58,11 @@ rigctl -m2 Z 0
 # ...when using wsjt-x with audio frequency below 200 Hz 
 
 # set antenna
-rigctl -m2 Y 1
-rigctl -m2 Y 2
+# ant 1
+rigctl -m2 Y 2 2 
+# ant 2
+rigctl -m2 Y 3 3 
+
 
 # switching to memory channel 80
 rigctl  -m2 E 80
@@ -70,3 +73,4 @@ rigctl -m2 V VFOB
 rigctl -m2 V MEM
 # get status
 rigctl -m2 v
+
